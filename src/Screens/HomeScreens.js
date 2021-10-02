@@ -551,7 +551,13 @@ export default function HomeScreens() {
         </video>
         <div className="possibilities__container__content">
           <div className="possibilities__container__content__heading">
-            IOT Enables New Possibiltes
+            Building the AI-Powered Organization
+          </div>
+          <div className="possibilities__container__content__info">
+            Technology isn’t the biggest challenge. Culture is. Organizations
+            with the strongest cultural orientation to data-driven insights and
+            decision-making were twice as likely to have significantly exceeded
+            business goals.
           </div>
           <Carousel
             className="possibilities__container__content__carousel"
@@ -878,7 +884,7 @@ export default function HomeScreens() {
             />
             <div className="explore__container__wrapper__card__content">
               <div className="explore__container__wrapper__card__heading">
-                Engineering
+                ITVue
               </div>
               <div className="explore__container__wrapper__card__link">
                 Learn more
@@ -896,7 +902,7 @@ export default function HomeScreens() {
             />
             <div className="explore__container__wrapper__card__content">
               <div className="explore__container__wrapper__card__heading">
-                Market Adoption
+                HRVue
               </div>
               <div className="explore__container__wrapper__card__link">
                 Learn more
@@ -914,7 +920,7 @@ export default function HomeScreens() {
             />
             <div className="explore__container__wrapper__card__content">
               <div className="explore__container__wrapper__card__heading">
-                Socail Policy
+                CultureVue
               </div>
               <div className="explore__container__wrapper__card__link">
                 Learn more
@@ -932,7 +938,7 @@ export default function HomeScreens() {
             />
             <div className="explore__container__wrapper__card__content">
               <div className="explore__container__wrapper__card__heading">
-                Research
+                Small BusinessVue
               </div>
               <div className="explore__container__wrapper__card__link">
                 Learn more
@@ -950,7 +956,7 @@ export default function HomeScreens() {
             />
             <div className="explore__container__wrapper__card__content">
               <div className="explore__container__wrapper__card__heading">
-                PR & Communication
+                LeaderVue
               </div>
               <div className="explore__container__wrapper__card__link">
                 Learn more

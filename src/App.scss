@@ -180,7 +180,7 @@ a {
   z-index: 9999;
   padding-bottom: 8em;
   background-color: rgba(0, 0, 0, 0.3);
-  animation: wrapper 10s;
+  animation: wrapper 20s;
 }
 @keyframes wrapper {
   from {
@@ -442,7 +442,14 @@ a {
   font-size: 30px;
   color: $white;
   font-weight: bold;
+  margin-bottom: 1em;
+}
+.possibilities__container__content__info {
+  font-size: 16px;
+  color: $white;
   margin-bottom: 3em;
+  max-width: 900px;
+  text-align: center;
 }
 .possibilities__container__content__carousel {
   width: 1200px;

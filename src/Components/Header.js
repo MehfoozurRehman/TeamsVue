@@ -71,7 +71,7 @@ export default function Header() {
               setIsDropDownOpen2(true);
             }}
           >
-            Structures
+            Get Started
             {isDropDownOpen2 ? (
               <DropDown
                 dropdownlist={dropdownlistItem2}
