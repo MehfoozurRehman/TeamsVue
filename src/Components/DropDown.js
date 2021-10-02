@@ -1,16 +1,20 @@
 import React from "react";
 import onClickOutside from "react-onclickoutside";
 
-function DropDown() {
-  DropDown.handleClickOutside = () => console.log("hello");
+function DropDown({ dropdownlist, isOpen }) {
+  DropDown.handleClickOutside = () => isOpen(false);
   return (
     <div className="header__nav__link__dropdown">
-      <a href="#" className="header__nav__link__dropdown__linkl">
-        What is TeamsVue
-      </a>
-      <a href="#" className="header__nav__link__dropdown__linkl">
-        TeamsVue’s Impact
-      </a>
+      {dropdownlist.map((dropdownlistItem) => {
+        return (
+          <a
+            href={dropdownlistItem.link}
+            className="header__nav__link__dropdown__link"
+          >
+            {dropdownlistItem.name}
+          </a>
+        );
+      })}
     </div>
   );
 }

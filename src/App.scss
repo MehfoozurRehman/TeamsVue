@@ -80,8 +80,82 @@ a {
   background-color: $secondary;
 }
 .header__nav__link:hover::after {
-  transition: 200ms ease-in-out;
+  transition: 500ms ease-in-out;
   width: 70%;
+}
+.header__nav__link__dropdown {
+  position: absolute;
+  background-color: $white;
+  padding: 1.5em;
+  border-radius: 5px;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  animation-name: fade, slide;
+  animation-duration: 400ms, 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear, cubic-bezier(0.23, 1, 0.32, 1);
+  animation-delay: 200ms, 0;
+  height: fit-content;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    margin-top: -10px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes fade_reverse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide_reverse {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -10px;
+  }
+}
+
+// .fade {
+//   animation-name: fade, slide;
+//   animation-duration: 200ms, 400ms;
+//   animation-fill-mode: forwards;
+//   animation-timing-function: linear, cubic-bezier(0.23, 1, 0.32, 1);
+//   animation-delay: 200ms, 0;
+// }
+
+// .fade_reverse {
+//   animation-name: fade_reverse, slide_reverse;
+//   animation-duration: 100ms, 200ms;
+//   animation-timing-function: linear, cubic-bezier(0.23, 1, 0.32, 1);
+//   animation-delay: 100ms, 0;
+// }
+.header__nav__link__dropdown__link {
+  font-size: 16px;
+  color: $primary;
+  white-space: nowrap;
+  padding: 0.5em;
+  width: 100%;
+}
+.header__nav__link__dropdown__link:hover {
+  font-weight: bold;
 }
 .jumbotron__container {
   height: 100%;
@@ -269,7 +343,7 @@ a {
   color: $white;
 }
 .jumbotron__container__bar__wrapper__entry svg {
-  width: 60px;
+  width: 40px;
   margin-right: 1em;
 }
 .jumbotron__container__bar__wrapper__entry__content {
@@ -279,12 +353,12 @@ a {
   height: 100%;
 }
 .jumbotron__container__bar__wrapper__entry__content__heading {
-  font-size: 20px;
+  font-size: 16px;
   color: $white;
   margin-bottom: 0.1em;
 }
 .jumbotron__container__bar__wrapper__entry__content__info {
-  font-size: 14px;
+  font-size: 12px;
   color: $white;
 }
 .slogan__container {
