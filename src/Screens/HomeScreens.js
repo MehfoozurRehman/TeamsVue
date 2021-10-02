@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import jumbotron1 from "../Assets/jumbotron1.mp4";
 import jumbotron2 from "../Assets/jumbotron2.mp4";
 import jumbotron3 from "../Assets/jumbotron1.mp4";
-import { ChevronLeft, ChevronRight } from "react-feather";
+import footer from "../Assets/footer.mp4";
+import girlyone from "../Assets/girly one.mp4";
+import backgroundvideo from "../Assets/background video.mp4";
+import cardImg1 from "../Assets/engineering_card_.jpg";
+import cardImg2 from "../Assets/business_card.jpg";
+import cardImg3 from "../Assets/social_policy_.jpg";
+import cardImg4 from "../Assets/research_card-min.jpg";
+import cardImg5 from "../Assets/recent_insights_card-min.jpg";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Facebook,
+  GitHub,
+  Instagram,
+  Linkedin,
+  Monitor,
+  Twitter,
+  Youtube,
+} from "react-feather";
 
 export default function HomeScreens() {
   return (
@@ -15,11 +33,51 @@ export default function HomeScreens() {
           infiniteLoop={true}
           renderIndicator={false}
           preventMovementUntilSwipeScrollTolerance={true}
+          autoFocus={true}
+          onChange={() => {
+            let element1 = document.getElementById(
+              "jumbotron__container__entry__content__heading__span1"
+            );
+            let element2 = document.getElementById(
+              "jumbotron__container__entry__content__heading__span2"
+            );
+            let element3 = document.getElementById(
+              "jumbotron__container__entry__content__heading__span3"
+            );
+            if (
+              !element2.classList.contains(
+                "jumbotron__container__entry__content__heading__span"
+              )
+            ) {
+              element2.classList.add(
+                "jumbotron__container__entry__content__heading__span"
+              );
+            }
+            // else {
+            //   element2.classList.add(
+            //     "jumbotron__container__entry__content__heading__span"
+            //   );
+            // }
+            if (
+              !element3.classList.contains(
+                "jumbotron__container__entry__content__heading__span"
+              )
+            ) {
+              element3.classList.add(
+                "jumbotron__container__entry__content__heading__span"
+              );
+            }
+            // else {
+            //   element3.classList.add(
+            //     "jumbotron__container__entry__content__heading__span"
+            //   );
+            // }
+          }}
           renderArrowNext={(onClickHandler) => {
             return (
               <button
                 type="button"
-                className="jumbotron__container__entry__content__btn jumbotron__container__entry__content__btn__right"
+                className="jumbotron__container__entry__content__btn jumbotron__container__entry__content__btn__right toggleclass"
                 onClick={onClickHandler}
               >
                 <ChevronRight size={20} color="currentColor" />
@@ -30,7 +88,7 @@ export default function HomeScreens() {
             return (
               <button
                 type="button"
-                className="jumbotron__container__entry__content__btn jumbotron__container__entry__content__btn__left"
+                className="jumbotron__container__entry__content__btn jumbotron__container__entry__content__btn__left toggleclass"
                 onClick={onClickHandler}
               >
                 <ChevronLeft size={20} color="currentColor" />
@@ -45,9 +103,85 @@ export default function HomeScreens() {
             <div className="jumbotron__container__entry__wrapper">
               <div className="jumbotron__container__entry__content">
                 <div className="jumbotron__container__entry__content__heading">
-                  Project
+                  <span
+                    id="jumbotron__container__entry__content__heading__span1"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    P
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span1"
+                    style={{ animationDuration: "0.546037s" }}
+                  >
+                    r
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span1"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    o
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span1"
+                    style={{ animationDuration: "0.546037s" }}
+                  >
+                    j
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span1"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    e
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span1"
+                    style={{ animationDuration: "0.546037s" }}
+                  >
+                    c
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span1"
+                    style={{ animationDuration: "0.546037s" }}
+                  >
+                    t
+                  </span>
                   <div className="jumbotron__container__entry__content__heading__span1">
-                    Impact
+                    <span
+                      id="jumbotron__container__entry__content__heading__span1"
+                      style={{ animationDuration: "0.546037s" }}
+                    >
+                      I
+                    </span>
+                    <span
+                      id="jumbotron__container__entry__content__heading__span1"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      m
+                    </span>
+                    <span
+                      id="jumbotron__container__entry__content__heading__span1"
+                      style={{ animationDuration: "0.546037s" }}
+                    >
+                      p
+                    </span>
+                    <span
+                      id="jumbotron__container__entry__content__heading__span1"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      a
+                    </span>
+                    <span
+                      id="jumbotron__container__entry__content__heading__span1"
+                      style={{ animationDuration: "0.546037s" }}
+                    >
+                      c
+                    </span>
+                    <span
+                      di="jumbotron__container__entry__content__heading__span1"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      t
+                    </span>
                   </div>
                 </div>
                 <div className="jumbotron__container__entry__content__bar"></div>
@@ -65,9 +199,103 @@ export default function HomeScreens() {
             <div className="jumbotron__container__entry__wrapper">
               <div className="jumbotron__container__entry__content">
                 <div className="jumbotron__container__entry__content__heading">
-                  Empowering
+                  <span
+                    id="jumbotron__container__entry__content__heading__span2"
+                    style={{ animationDuration: "0.546037s" }}
+                  >
+                    E
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span2"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    m
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span2"
+                    style={{ animationDuration: "0.546037s" }}
+                  >
+                    p
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span2"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    o
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span2"
+                    style={{ animationDuration: "0.546037s" }}
+                  >
+                    w
+                  </span>
+                  <span
+                    di="jumbotron__container__entry__content__heading__span2"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    e
+                  </span>
+                  <span
+                    di="jumbotron__container__entry__content__heading__span2"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    r
+                  </span>
+                  <span
+                    di="jumbotron__container__entry__content__heading__span2"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    i
+                  </span>
+                  <span
+                    di="jumbotron__container__entry__content__heading__span2"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    n
+                  </span>
+                  <span
+                    di="jumbotron__container__entry__content__heading__span2"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    g
+                  </span>
                   <div className="jumbotron__container__entry__content__heading__span2">
-                    People
+                    <span
+                      id="jumbotron__container__entry__content__heading__span2"
+                      style={{ animationDuration: "0.546037s" }}
+                    >
+                      P
+                    </span>
+                    <span
+                      id="jumbotron__container__entry__content__heading__span2"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      e
+                    </span>
+                    <span
+                      id="jumbotron__container__entry__content__heading__span2"
+                      style={{ animationDuration: "0.546037s" }}
+                    >
+                      o
+                    </span>
+                    <span
+                      id="jumbotron__container__entry__content__heading__span2"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      p
+                    </span>
+                    <span
+                      id="jumbotron__container__entry__content__heading__span2"
+                      style={{ animationDuration: "0.546037s" }}
+                    >
+                      l
+                    </span>
+                    <span
+                      di="jumbotron__container__entry__content__heading__span2"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      e
+                    </span>
                   </div>
                 </div>
                 <div className="jumbotron__container__entry__content__bar"></div>
@@ -85,9 +313,121 @@ export default function HomeScreens() {
             <div className="jumbotron__container__entry__wrapper">
               <div className="jumbotron__container__entry__content">
                 <div className="jumbotron__container__entry__content__heading">
-                  Platform
+                  <span
+                    id="jumbotron__container__entry__content__heading__span3"
+                    style={{ animationDuration: "0.546037s" }}
+                  >
+                    P
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span3"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    l
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span3"
+                    style={{ animationDuration: "0.546037s" }}
+                  >
+                    a
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span3"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    t
+                  </span>
+                  <span
+                    id="jumbotron__container__entry__content__heading__span3"
+                    style={{ animationDuration: "0.546037s" }}
+                  >
+                    f
+                  </span>
+                  <span
+                    di="jumbotron__container__entry__content__heading__span3"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    o
+                  </span>
+                  <span
+                    di="jumbotron__container__entry__content__heading__span3"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    r
+                  </span>
+                  <span
+                    di="jumbotron__container__entry__content__heading__span3"
+                    style={{ animationDuration: "1.51518s" }}
+                  >
+                    m
+                  </span>
                   <div className="jumbotron__container__entry__content__heading__span3">
-                    Integration
+                    <span
+                      id="jumbotron__container__entry__content__heading__span3"
+                      style={{ animationDuration: "0.546037s" }}
+                    >
+                      I
+                    </span>
+                    <span
+                      id="jumbotron__container__entry__content__heading__span3"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      n
+                    </span>
+                    <span
+                      id="jumbotron__container__entry__content__heading__span3"
+                      style={{ animationDuration: "0.546037s" }}
+                    >
+                      t
+                    </span>
+                    <span
+                      id="jumbotron__container__entry__content__heading__span3"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      e
+                    </span>
+                    <span
+                      id="jumbotron__container__entry__content__heading__span3"
+                      style={{ animationDuration: "0.546037s" }}
+                    >
+                      g
+                    </span>
+                    <span
+                      di="jumbotron__container__entry__content__heading__span3"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      r
+                    </span>
+                    <span
+                      di="jumbotron__container__entry__content__heading__span3"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      a
+                    </span>
+                    <span
+                      di="jumbotron__container__entry__content__heading__span3"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      t
+                    </span>
+                    <span
+                      di="jumbotron__container__entry__content__heading__span3"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      i
+                    </span>
+                    <span
+                      di="jumbotron__container__entry__content__heading__span3"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      o
+                    </span>
+                    <span
+                      di="jumbotron__container__entry__content__heading__span3"
+                      style={{ animationDuration: "1.51518s" }}
+                    >
+                      n
+                    </span>
                   </div>
                 </div>
                 <div className="jumbotron__container__entry__content__bar"></div>
@@ -178,7 +518,7 @@ export default function HomeScreens() {
       </div>
       <div className="slogan__container">
         <video autoPlay={true} muted={true} loop={true}>
-          <source src={jumbotron1} type="video/mp4" />
+          <source src={backgroundvideo} type="video/mp4" />
         </video>
         <div className="slogan__container__wrapper">
           <div className="slogan__container__wrapper__container">
@@ -196,9 +536,184 @@ export default function HomeScreens() {
           </div>
         </div>
       </div>
+      <div className="possibilities__container">
+        <video autoPlay={true} muted={true} loop={true}>
+          <source src={girlyone} type="video/mp4" />
+        </video>
+        <div className="possibilities__container__content">
+          <div className="possibilities__container__content__heading">
+            IOT Enables New Possibiltes
+          </div>
+          <Carousel
+            className="possibilities__container__content__carousel"
+            interval={7}
+            // infiniteLoop={true}
+            renderIndicator={false}
+            preventMovementUntilSwipeScrollTolerance={true}
+            showStatus={false}
+            renderArrowNext={(onClickHandler) => {
+              return <></>;
+            }}
+            renderArrowPrev={(onClickHandler) => {
+              return <></>;
+            }}
+          >
+            <div className="possibilities__container__content__entry">
+              <div className="possibilities__container__content__entry__blob__wrapper">
+                <input
+                  type="radio"
+                  name="possibilities__container__content__entry__blob__input"
+                  className="possibilities__container__content__entry__blob__input"
+                  defaultChecked={true}
+                />
+                <div className="possibilities__container__content__entry__blob ">
+                  <div className="possibilities__container__content__entry__blob__heading">
+                    <span style={{ animationDuration: "0.546037s" }}>S</span>
+                    <span style={{ animationDuration: "1.51518s" }}>o</span>
+                    <span style={{ animationDuration: "0.546037s" }}>c</span>
+                    <span style={{ animationDuration: "1.51518s" }}>i</span>
+                    <span style={{ animationDuration: "0.546037s" }}>a</span>
+                    <span style={{ animationDuration: "0.546037s" }}>l</span>
+                    <span
+                      style={{
+                        animationDuration: "1.51518s",
+                        marginLeft: ".5em",
+                      }}
+                    >
+                      I
+                    </span>
+                    <span style={{ animationDuration: "0.546037s" }}>m</span>
+                    <span style={{ animationDuration: "1.51518s" }}>p</span>
+                    <span style={{ animationDuration: "0.546037s" }}>a</span>
+                    <span style={{ animationDuration: "1.51518s" }}>c</span>
+                    <span style={{ animationDuration: "1.51518s" }}>t</span>
+                  </div>
+                  <div className="possibilities__container__content__entry__blob__point"></div>
+                  <div className="possibilities__container__content__entry__blob__subheading">
+                    Sub heading
+                  </div>
+                </div>
+              </div>
+              <div className="possibilities__container__content__entry__blob__wrapper">
+                <input
+                  type="radio"
+                  name="possibilities__container__content__entry__blob__input"
+                  className="possibilities__container__content__entry__blob__input"
+                />
+                <div className="possibilities__container__content__entry__blob ">
+                  <div className="possibilities__container__content__entry__blob__heading">
+                    <span style={{ animationDuration: "0.546037s" }}>M</span>
+                    <span style={{ animationDuration: "1.51518s" }}>o</span>
+                    <span style={{ animationDuration: "0.546037s" }}>b</span>
+                    <span style={{ animationDuration: "1.51518s" }}>i</span>
+                    <span style={{ animationDuration: "1.51518s" }}>l</span>
+                    <span style={{ animationDuration: "1.51518s" }}>t</span>
+                    <span style={{ animationDuration: "1.51518s" }}>y</span>
+                  </div>
+                  <div className="possibilities__container__content__entry__blob__point"></div>
+                  <div className="possibilities__container__content__entry__blob__subheading">
+                    Sub heading
+                  </div>
+                </div>
+              </div>
+
+              <div className="possibilities__container__content__entry__blob__wrapper">
+                <input
+                  type="radio"
+                  name="possibilities__container__content__entry__blob__input"
+                  className="possibilities__container__content__entry__blob__input"
+                />
+                <div className="possibilities__container__content__entry__blob ">
+                  <div className="possibilities__container__content__entry__blob__heading">
+                    <span style={{ animationDuration: "0.546037s" }}>S</span>
+                    <span style={{ animationDuration: "1.51518s" }}>m</span>
+                    <span style={{ animationDuration: "0.546037s" }}>a</span>
+                    <span style={{ animationDuration: "1.51518s" }}>r</span>
+                    <span style={{ animationDuration: "0.546037s" }}>t</span>
+                    <span
+                      style={{
+                        animationDuration: "1.51518s",
+                        marginLeft: ".5em",
+                      }}
+                    >
+                      S
+                    </span>
+                    <span style={{ animationDuration: "0.546037s" }}>t</span>
+                    <span style={{ animationDuration: "1.51518s" }}>r</span>
+                    <span style={{ animationDuration: "0.546037s" }}>e</span>
+                    <span style={{ animationDuration: "1.51518s" }}>e</span>
+                    <span style={{ animationDuration: "1.51518s" }}>t</span>
+                    <span style={{ animationDuration: "1.51518s" }}>s</span>
+                  </div>
+                  <div className="possibilities__container__content__entry__blob__point"></div>
+                  <div className="possibilities__container__content__entry__blob__subheading">
+                    Sub heading
+                  </div>
+                </div>
+              </div>
+              <div className="possibilities__container__content__entry__blob__wrapper">
+                <input
+                  type="radio"
+                  name="possibilities__container__content__entry__blob__input"
+                  className="possibilities__container__content__entry__blob__input"
+                />
+                <div className="possibilities__container__content__entry__blob ">
+                  <div className="possibilities__container__content__entry__blob__heading">
+                    <span style={{ animationDuration: "0.546037s" }}>G</span>
+                    <span style={{ animationDuration: "1.51518s" }}>l</span>
+                    <span style={{ animationDuration: "0.546037s" }}>o</span>
+                    <span style={{ animationDuration: "1.51518s" }}>b</span>
+                    <span style={{ animationDuration: "0.546037s" }}>a</span>
+                    <span style={{ animationDuration: "1.51518s" }}>l</span>
+                    <span
+                      style={{
+                        animationDuration: "1.51518s",
+                        marginLeft: ".5em",
+                      }}
+                    >
+                      T
+                    </span>
+                    <span style={{ animationDuration: "0.546037s" }}>r</span>
+                    <span style={{ animationDuration: "1.51518s" }}>a</span>
+                    <span style={{ animationDuration: "0.546037s" }}>d</span>
+                    <span style={{ animationDuration: "1.51518s" }}>e</span>
+                  </div>
+                  <div className="possibilities__container__content__entry__blob__point"></div>
+                  <div className="possibilities__container__content__entry__blob__subheading">
+                    Sub heading
+                  </div>
+                </div>
+              </div>
+              <div className="possibilities__container__content__entry__blob__wrapper">
+                <input
+                  type="radio"
+                  name="possibilities__container__content__entry__blob__input"
+                  className="possibilities__container__content__entry__blob__input"
+                />
+                <div className="possibilities__container__content__entry__blob ">
+                  <div className="possibilities__container__content__entry__blob__heading">
+                    <span style={{ animationDuration: "0.546037s" }}>D</span>
+                    <span style={{ animationDuration: "1.51518s" }}>i</span>
+                    <span style={{ animationDuration: "0.546037s" }}>g</span>
+                    <span style={{ animationDuration: "1.51518s" }}>i</span>
+                    <span style={{ animationDuration: "0.546037s" }}>t</span>
+                    <span style={{ animationDuration: "1.51518s" }}>a</span>
+                    <span style={{ animationDuration: "1.51518s" }}>l</span>
+                  </div>
+                  <div className="possibilities__container__content__entry__blob__point"></div>
+                  <div className="possibilities__container__content__entry__blob__subheading">
+                    Sub heading
+                  </div>
+                </div>
+              </div>
+              <div className="possibilities__container__content__entry__bar"></div>
+            </div>
+          </Carousel>
+        </div>
+      </div>
       <div className="getting__started__container">
         <video autoPlay={true} muted={true} loop={true}>
-          <source src={jumbotron1} type="video/mp4" />
+          <source src={backgroundvideo} type="video/mp4" />
         </video>
         <div className="getting__started__container__wrapper">
           <div className="getting__started__container__wrapper__heading">
@@ -330,6 +845,198 @@ export default function HomeScreens() {
           <button className="getting__started__container__wrapper__button">
             View More
           </button>
+        </div>
+      </div>
+      <div className="explore__container">
+        <div className="explore__container__wrapper">
+          <div className="explore__container__wrapper__card__reverse">
+            <div className="explore__container__wrapper__card__reverse__sub__heading">
+              Explore
+            </div>
+            <div className="explore__container__wrapper__card__reverse__heading">
+              TeamsVue
+            </div>
+            <div className="explore__container__wrapper__card__reverse__info">
+              TeamVue utilize A.I Algorithms in VUE flow for project & People
+              Effectiveness
+            </div>
+          </div>
+          <div className="explore__container__wrapper__card">
+            <img
+              src={cardImg1}
+              alt="explore__container__wrapper__card__img"
+              className="explore__container__wrapper__card__img"
+            />
+            <div className="explore__container__wrapper__card__content">
+              <div className="explore__container__wrapper__card__heading">
+                Engineering
+              </div>
+              <div className="explore__container__wrapper__card__link">
+                Learn more
+                <div>
+                  <ChevronRight size={20} color="currentColor" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="explore__container__wrapper__card">
+            <img
+              src={cardImg2}
+              alt="explore__container__wrapper__card__img"
+              className="explore__container__wrapper__card__img"
+            />
+            <div className="explore__container__wrapper__card__content">
+              <div className="explore__container__wrapper__card__heading">
+                Market Adoption
+              </div>
+              <div className="explore__container__wrapper__card__link">
+                Learn more
+                <div>
+                  <ChevronRight size={20} color="currentColor" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="explore__container__wrapper__card">
+            <img
+              src={cardImg3}
+              alt="explore__container__wrapper__card__img"
+              className="explore__container__wrapper__card__img"
+            />
+            <div className="explore__container__wrapper__card__content">
+              <div className="explore__container__wrapper__card__heading">
+                Socail Policy
+              </div>
+              <div className="explore__container__wrapper__card__link">
+                Learn more
+                <div>
+                  <ChevronRight size={20} color="currentColor" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="explore__container__wrapper__card">
+            <img
+              src={cardImg4}
+              alt="explore__container__wrapper__card__img"
+              className="explore__container__wrapper__card__img"
+            />
+            <div className="explore__container__wrapper__card__content">
+              <div className="explore__container__wrapper__card__heading">
+                Research
+              </div>
+              <div className="explore__container__wrapper__card__link">
+                Learn more
+                <div>
+                  <ChevronRight size={20} color="currentColor" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="explore__container__wrapper__card">
+            <img
+              src={cardImg5}
+              alt="explore__container__wrapper__card__img"
+              className="explore__container__wrapper__card__img"
+            />
+            <div className="explore__container__wrapper__card__content">
+              <div className="explore__container__wrapper__card__heading">
+                PR & Communication
+              </div>
+              <div className="explore__container__wrapper__card__link">
+                Learn more
+                <div>
+                  <ChevronRight size={20} color="currentColor" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="footer__container">
+        <video autoPlay={true} muted={true} loop={true}>
+          <source src={footer} type="video/mp4" />
+        </video>
+        <div className="footer__container__wrapper">
+          <div className="footer__container__wrapper__heading">
+            TEAMVUE Provides Digital Trust, Enabling Us To Build A Better World
+          </div>
+          <div className="footer__container__wrapper__content">
+            <div className="footer__container__wrapper__content__left">
+              Registered Address TEAMVUE Foundation c/o Nextland Straßburger
+              Straße 55 10405 Berlin Germany
+            </div>
+            <div className="footer__container__wrapper__content__right">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </div>
+          </div>
+        </div>
+        <div className="footer__container__bar">
+          <a
+            href="#"
+            className="footer__container__bar__link footer__container__bar__link1"
+          >
+            <Youtube size={20} color="currentColor" />
+            <div className="footer__container__bar__link__text">Youtube</div>
+          </a>
+          <a
+            href="#"
+            className="footer__container__bar__link footer__container__bar__link2"
+          >
+            <GitHub size={20} color="currentColor" />
+            <div className="footer__container__bar__link__text">GitHub</div>
+          </a>
+          <a
+            href="#"
+            className="footer__container__bar__link footer__container__bar__link3"
+          >
+            <Monitor size={20} color="currentColor" />
+            <div className="footer__container__bar__link__text">Discord</div>
+          </a>
+          <a
+            href="#"
+            className="footer__container__bar__link footer__container__bar__link4"
+          >
+            <Twitter size={20} color="currentColor" />
+            <div className="footer__container__bar__link__text">Twitter</div>
+          </a>
+          <a
+            href="#"
+            className="footer__container__bar__link footer__container__bar__link5"
+          >
+            <Monitor size={20} color="currentColor" />
+            <div className="footer__container__bar__link__text">Reddit</div>
+          </a>
+          <a
+            href="#"
+            className="footer__container__bar__link footer__container__bar__link6"
+          >
+            <Linkedin size={20} color="currentColor" />
+            <div className="footer__container__bar__link__text">LinkedIn</div>
+          </a>
+          <a
+            href="#"
+            className="footer__container__bar__link footer__container__bar__link7"
+          >
+            <Instagram size={20} color="currentColor" />
+            <div className="footer__container__bar__link__text">Instagram</div>
+          </a>
+          <a
+            href="#"
+            className="footer__container__bar__link footer__container__bar__link8"
+          >
+            <Facebook size={20} color="currentColor" />
+            <div className="footer__container__bar__link__text">Facebook</div>
+          </a>
         </div>
       </div>
     </>
