@@ -460,7 +460,7 @@ export default function HomeScreens() {
                   Culture Management
                 </div>
                 <div className="jumbotron__container__bar__wrapper__entry__content__info">
-                  Sub Heading Here
+                  View Details Here
                 </div>
               </div>
             </div>
@@ -477,7 +477,7 @@ export default function HomeScreens() {
                   Remote Workforce Management
                 </div>
                 <div className="jumbotron__container__bar__wrapper__entry__content__info">
-                  Sub Heading Here
+                  View Details Here
                 </div>
               </div>
             </div>
@@ -501,7 +501,7 @@ export default function HomeScreens() {
                   Leadership Development
                 </div>
                 <div className="jumbotron__container__bar__wrapper__entry__content__info">
-                  Sub Heading Here
+                  View Details Here
                 </div>
               </div>
             </div>
@@ -518,7 +518,7 @@ export default function HomeScreens() {
                   Career Development
                 </div>
                 <div className="jumbotron__container__bar__wrapper__entry__content__info">
-                  Sub Heading Here
+                  View Details Here
                 </div>
               </div>
             </div>
@@ -532,12 +532,13 @@ export default function HomeScreens() {
         <div className="slogan__container__wrapper">
           <div className="slogan__container__wrapper__container">
             <div className="slogan__container__wrapper__heading">
-              An Open, Feeless Data And <span>Value Transfer Protocol</span>
+              Building the <span>AI-Powered Organization</span>
             </div>
             <div className="slogan__container__wrapper__info">
-              <span>TEAMVUE</span> has fundamentally reengineered distributed
-              ledger technology, enabling secure exchange of both value and
-              data, without any fees.
+              Technology isn’t the biggest challenge. Culture is. Organizations
+              with the strongest cultural orientation to data-driven insights
+              and decision-making were twice as likely to have significantly
+              exceeded business goals
             </div>
             <button className="slogan__container__wrapper__button">
               View More
@@ -551,13 +552,7 @@ export default function HomeScreens() {
         </video>
         <div className="possibilities__container__content">
           <div className="possibilities__container__content__heading">
-            Building the AI-Powered Organization
-          </div>
-          <div className="possibilities__container__content__info">
-            Technology isn’t the biggest challenge. Culture is. Organizations
-            with the strongest cultural orientation to data-driven insights and
-            decision-making were twice as likely to have significantly exceeded
-            business goals.
+            Change IOT Enable New Possibilities to AI Enable New Possibilities
           </div>
           <Carousel
             className="possibilities__container__content__carousel"
@@ -583,29 +578,30 @@ export default function HomeScreens() {
                 />
                 <div className="possibilities__container__content__entry__blob ">
                   <div className="possibilities__container__content__entry__blob__heading">
-                    <span style={{ animationDuration: "0.546037s" }}>S</span>
-                    <span style={{ animationDuration: "1.51518s" }}>o</span>
-                    <span style={{ animationDuration: "0.546037s" }}>c</span>
-                    <span style={{ animationDuration: "1.51518s" }}>i</span>
-                    <span style={{ animationDuration: "0.546037s" }}>a</span>
+                    <span style={{ animationDuration: "0.546037s" }}>P</span>
+                    <span style={{ animationDuration: "1.51518s" }}>e</span>
+                    <span style={{ animationDuration: "0.546037s" }}>o</span>
+                    <span style={{ animationDuration: "1.51518s" }}>p</span>
                     <span style={{ animationDuration: "0.546037s" }}>l</span>
+                    <span style={{ animationDuration: "0.546037s" }}>e</span>
+                    <br />
                     <span
                       style={{
                         animationDuration: "1.51518s",
-                        marginLeft: ".5em",
                       }}
                     >
-                      I
+                      L
                     </span>
-                    <span style={{ animationDuration: "0.546037s" }}>m</span>
-                    <span style={{ animationDuration: "1.51518s" }}>p</span>
-                    <span style={{ animationDuration: "0.546037s" }}>a</span>
-                    <span style={{ animationDuration: "1.51518s" }}>c</span>
-                    <span style={{ animationDuration: "1.51518s" }}>t</span>
+                    <span style={{ animationDuration: "0.546037s" }}>e</span>
+                    <span style={{ animationDuration: "1.51518s" }}>a</span>
+                    <span style={{ animationDuration: "0.546037s" }}>d</span>
+                    <span style={{ animationDuration: "1.51518s" }}>e</span>
+                    <span style={{ animationDuration: "1.51518s" }}>r</span>
+                    <span style={{ animationDuration: "1.51518s" }}>s</span>
                   </div>
                   <div className="possibilities__container__content__entry__blob__point"></div>
                   <div className="possibilities__container__content__entry__blob__subheading">
-                    Sub heading
+                    View Details
                   </div>
                 </div>
               </div>
@@ -617,17 +613,35 @@ export default function HomeScreens() {
                 />
                 <div className="possibilities__container__content__entry__blob ">
                   <div className="possibilities__container__content__entry__blob__heading">
-                    <span style={{ animationDuration: "0.546037s" }}>M</span>
-                    <span style={{ animationDuration: "1.51518s" }}>o</span>
-                    <span style={{ animationDuration: "0.546037s" }}>b</span>
-                    <span style={{ animationDuration: "1.51518s" }}>i</span>
-                    <span style={{ animationDuration: "1.51518s" }}>l</span>
-                    <span style={{ animationDuration: "1.51518s" }}>t</span>
-                    <span style={{ animationDuration: "1.51518s" }}>y</span>
+                    <span style={{ animationDuration: "0.546037s" }}>P</span>
+                    <span style={{ animationDuration: "1.51518s" }}>r</span>
+                    <span style={{ animationDuration: "0.546037s" }}>o</span>
+                    <span style={{ animationDuration: "1.51518s" }}>c</span>
+                    <span style={{ animationDuration: "0.546037s" }}>u</span>
+                    <span style={{ animationDuration: "0.546037s" }}>r</span>
+                    <span style={{ animationDuration: "0.546037s" }}>e</span>
+                    <span style={{ animationDuration: "0.546037s" }}>m</span>
+                    <span style={{ animationDuration: "0.546037s" }}>e</span>
+                    <span style={{ animationDuration: "0.546037s" }}>n</span>
+                    <span style={{ animationDuration: "0.546037s" }}>t</span>
+                    <br />
+                    <span
+                      style={{
+                        animationDuration: "1.51518s",
+                      }}
+                    >
+                      L
+                    </span>
+                    <span style={{ animationDuration: "0.546037s" }}>e</span>
+                    <span style={{ animationDuration: "1.51518s" }}>a</span>
+                    <span style={{ animationDuration: "0.546037s" }}>d</span>
+                    <span style={{ animationDuration: "1.51518s" }}>c</span>
+                    <span style={{ animationDuration: "1.51518s" }}>r</span>
+                    <span style={{ animationDuration: "1.51518s" }}>s</span>
                   </div>
                   <div className="possibilities__container__content__entry__blob__point"></div>
                   <div className="possibilities__container__content__entry__blob__subheading">
-                    Sub heading
+                    View Details
                   </div>
                 </div>
               </div>
@@ -640,29 +654,26 @@ export default function HomeScreens() {
                 />
                 <div className="possibilities__container__content__entry__blob ">
                   <div className="possibilities__container__content__entry__blob__heading">
-                    <span style={{ animationDuration: "0.546037s" }}>S</span>
-                    <span style={{ animationDuration: "1.51518s" }}>m</span>
-                    <span style={{ animationDuration: "0.546037s" }}>a</span>
-                    <span style={{ animationDuration: "1.51518s" }}>r</span>
-                    <span style={{ animationDuration: "0.546037s" }}>t</span>
+                    <span style={{ animationDuration: "0.546037s" }}>H</span>
+                    <span style={{ animationDuration: "1.51518s" }}>R</span>
+                    <br />
                     <span
                       style={{
                         animationDuration: "1.51518s",
-                        marginLeft: ".5em",
                       }}
                     >
-                      S
+                      L
                     </span>
-                    <span style={{ animationDuration: "0.546037s" }}>t</span>
-                    <span style={{ animationDuration: "1.51518s" }}>r</span>
                     <span style={{ animationDuration: "0.546037s" }}>e</span>
-                    <span style={{ animationDuration: "1.51518s" }}>e</span>
-                    <span style={{ animationDuration: "1.51518s" }}>t</span>
+                    <span style={{ animationDuration: "1.51518s" }}>a</span>
+                    <span style={{ animationDuration: "0.546037s" }}>d</span>
+                    <span style={{ animationDuration: "1.51518s" }}>c</span>
+                    <span style={{ animationDuration: "1.51518s" }}>r</span>
                     <span style={{ animationDuration: "1.51518s" }}>s</span>
                   </div>
                   <div className="possibilities__container__content__entry__blob__point"></div>
                   <div className="possibilities__container__content__entry__blob__subheading">
-                    Sub heading
+                    View Details
                   </div>
                 </div>
               </div>
@@ -674,50 +685,32 @@ export default function HomeScreens() {
                 />
                 <div className="possibilities__container__content__entry__blob ">
                   <div className="possibilities__container__content__entry__blob__heading">
-                    <span style={{ animationDuration: "0.546037s" }}>G</span>
-                    <span style={{ animationDuration: "1.51518s" }}>l</span>
+                    <span style={{ animationDuration: "0.546037s" }}>P</span>
+                    <span style={{ animationDuration: "1.51518s" }}>r</span>
                     <span style={{ animationDuration: "0.546037s" }}>o</span>
-                    <span style={{ animationDuration: "1.51518s" }}>b</span>
-                    <span style={{ animationDuration: "0.546037s" }}>a</span>
-                    <span style={{ animationDuration: "1.51518s" }}>l</span>
+                    <span style={{ animationDuration: "1.51518s" }}>j</span>
+                    <span style={{ animationDuration: "0.546037s" }}>e</span>
+                    <span style={{ animationDuration: "1.51518s" }}>c</span>
+                    <span style={{ animationDuration: "1.51518s" }}>t</span>
+                    <br />
                     <span
                       style={{
                         animationDuration: "1.51518s",
-                        marginLeft: ".5em",
                       }}
                     >
-                      T
+                      M
                     </span>
-                    <span style={{ animationDuration: "0.546037s" }}>r</span>
-                    <span style={{ animationDuration: "1.51518s" }}>a</span>
-                    <span style={{ animationDuration: "0.546037s" }}>d</span>
+                    <span style={{ animationDuration: "0.546037s" }}>a</span>
+                    <span style={{ animationDuration: "1.51518s" }}>n</span>
+                    <span style={{ animationDuration: "0.546037s" }}>a</span>
+                    <span style={{ animationDuration: "1.51518s" }}>g</span>
                     <span style={{ animationDuration: "1.51518s" }}>e</span>
+                    <span style={{ animationDuration: "1.51518s" }}>r</span>
+                    <span style={{ animationDuration: "1.51518s" }}>s</span>
                   </div>
                   <div className="possibilities__container__content__entry__blob__point"></div>
                   <div className="possibilities__container__content__entry__blob__subheading">
-                    Sub heading
-                  </div>
-                </div>
-              </div>
-              <div className="possibilities__container__content__entry__blob__wrapper">
-                <input
-                  type="radio"
-                  name="possibilities__container__content__entry__blob__input"
-                  className="possibilities__container__content__entry__blob__input"
-                />
-                <div className="possibilities__container__content__entry__blob ">
-                  <div className="possibilities__container__content__entry__blob__heading">
-                    <span style={{ animationDuration: "0.546037s" }}>D</span>
-                    <span style={{ animationDuration: "1.51518s" }}>i</span>
-                    <span style={{ animationDuration: "0.546037s" }}>g</span>
-                    <span style={{ animationDuration: "1.51518s" }}>i</span>
-                    <span style={{ animationDuration: "0.546037s" }}>t</span>
-                    <span style={{ animationDuration: "1.51518s" }}>a</span>
-                    <span style={{ animationDuration: "1.51518s" }}>l</span>
-                  </div>
-                  <div className="possibilities__container__content__entry__blob__point"></div>
-                  <div className="possibilities__container__content__entry__blob__subheading">
-                    Sub heading
+                    View Details
                   </div>
                 </div>
               </div>
@@ -974,24 +967,17 @@ export default function HomeScreens() {
         </video>
         <div className="footer__container__wrapper">
           <div className="footer__container__wrapper__heading">
-            TEAMVUE Provides Digital Trust, Enabling Us To Build A Better World
+            Invue (Culture Management Program) 
           </div>
           <div className="footer__container__wrapper__content">
             <div className="footer__container__wrapper__content__left">
-              Registered Address TEAMVUE Foundation c/o Nextland Straßburger
-              Straße 55 10405 Berlin Germany
+              A.I. Software development program for culture management
             </div>
             <div className="footer__container__wrapper__content__right">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Technology isn’t the biggest challenge. Culture is. Organizations
+              with the strongest cultural orientation to data-driven insights
+              and decision-making were twice as likely to have significantly
+              exceeded business goals.
             </div>
           </div>
         </div>

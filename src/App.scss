@@ -198,7 +198,7 @@ a {
   justify-content: center;
 }
 .jumbotron__container__entry__content__heading {
-  font-size: 40px;
+  font-size: 50px;
   color: $white;
   display: flex;
   align-items: center;
@@ -238,7 +238,7 @@ a {
   height: 7px;
   position: absolute;
   background-color: $secondary;
-  top: 62px;
+  top: 73.5px;
   border-radius: 7px;
   z-index: 50;
   animation: line_through 3s;
@@ -442,7 +442,7 @@ a {
   font-size: 30px;
   color: $white;
   font-weight: bold;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 .possibilities__container__content__info {
   font-size: 16px;
@@ -455,7 +455,7 @@ a {
   width: 1200px;
 }
 .possibilities__container__content__entry {
-  padding: 3em 1em;
+  padding: 3em 3em;
   display: flex;
   // background-color: #ff7316;
   justify-content: space-between;
@@ -547,6 +547,8 @@ a {
   .possibilities__container__content__entry__blob__heading {
   font-size: 22px;
   margin-bottom: 1em;
+  white-space: normal;
+  word-wrap: break-word;
 }
 .possibilities__container__content__entry__blob__input:checked
   ~ .possibilities__container__content__entry__blob
@@ -632,6 +634,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid $third;
 }
 .getting__started__container__wrapper__container__entry__sub__heading {
   font-size: 14px;
