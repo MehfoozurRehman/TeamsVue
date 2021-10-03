@@ -552,7 +552,7 @@ export default function HomeScreens() {
         </video>
         <div className="possibilities__container__content">
           <div className="possibilities__container__content__heading">
-            Change IOT Enable New Possibilities to AI Enable New Possibilities
+            AI Enable New Possibilities
           </div>
           <Carousel
             className="possibilities__container__content__carousel"
@@ -635,7 +635,7 @@ export default function HomeScreens() {
                     <span style={{ animationDuration: "0.546037s" }}>e</span>
                     <span style={{ animationDuration: "1.51518s" }}>a</span>
                     <span style={{ animationDuration: "0.546037s" }}>d</span>
-                    <span style={{ animationDuration: "1.51518s" }}>c</span>
+                    <span style={{ animationDuration: "1.51518s" }}>e</span>
                     <span style={{ animationDuration: "1.51518s" }}>r</span>
                     <span style={{ animationDuration: "1.51518s" }}>s</span>
                   </div>
@@ -667,7 +667,7 @@ export default function HomeScreens() {
                     <span style={{ animationDuration: "0.546037s" }}>e</span>
                     <span style={{ animationDuration: "1.51518s" }}>a</span>
                     <span style={{ animationDuration: "0.546037s" }}>d</span>
-                    <span style={{ animationDuration: "1.51518s" }}>c</span>
+                    <span style={{ animationDuration: "1.51518s" }}>e</span>
                     <span style={{ animationDuration: "1.51518s" }}>r</span>
                     <span style={{ animationDuration: "1.51518s" }}>s</span>
                   </div>
